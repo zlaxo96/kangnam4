@@ -1,0 +1,27 @@
+package ch01_IF;
+
+import java.util.Scanner;
+
+//다중 if-else문
+public class GradingEx {
+	public static void main(String[] args) {
+		
+		char grade;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("정수를 입력하세요.(0~100) : ");
+		int score = scanner.nextInt();//점수 읽기
+		
+		if(score>=90) grade = 'A';//90이상
+		else if(score>=80) grade = 'B';//90미만 80이상
+		else if(score>=70) grade = 'C';//80미만 70이상
+		else if(score>=60) grade = 'D';//70미만 60이상
+		else grade = 'F';//60미만 모두 나머지(default)
+		
+		System.out.println("학점은 "+ grade+"입니다.");
+		
+		//자원해제
+		scanner.close();
+		
+	}
+
+}
