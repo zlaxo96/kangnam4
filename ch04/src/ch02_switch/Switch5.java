@@ -18,16 +18,16 @@ public class Switch5 {
 		case 6: case 7: case 8:
 			switch(num) {
 			case 6: str="초여름"; break;
-			case 7: str="진짜 더운 여름"break;
+			case 7: str="진짜 더운 여름"; break;
 			case 8: str="여름 말"; 
 			}
 			break;
-		case 9: case 10: case 11: str"가을"; break;
+		case 9: case 10: case 11: str= "가을"; break;
 		default: str="다시 입력해주세요.";
 		
+		}
 		System.out.println("현재 계절은 "+str);
 		
-		}
 		
 		
 	}
