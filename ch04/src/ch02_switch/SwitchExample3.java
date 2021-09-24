@@ -15,11 +15,19 @@ public class SwitchExample3 {
 		String weekDay = scanner.next();
 		
 		switch(weekDay) {
-		case "월요일" : case "화요일": case "수요일" : case "목요일" : System.out.println("열심히 공부합시다");break;
+		case "월요일" : 
+		case "화요일" : 
+		case "수요일" : 
+		case "목요일" : System.out.println("열심히 공부합시다");break;
+		
 		case "금요일" : System.out.println("쇼핑을 합니다.");break;
-		case "토요일" : case "일요일" : System.out.println("레저를 즐깁니다.");break;
-		default:System.out.println("다시 입력해주세요.");
+		
+		case "토요일" : 
+		case "일요일" : System.out.println("레저를 즐깁니다.");break;
 		}
+		//자원 해제 버전1.7부터 자동 자원해제 기능 생성
+		//scanner.close(); 안해도 무관
+		scanner.close();
 	}
 
 }

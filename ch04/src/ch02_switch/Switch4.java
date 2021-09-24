@@ -22,5 +22,7 @@ public class Switch4 {
 		
 		System.out.println("현재 계절은 "+str);
 		
+		
+		scanner.close();
 	}
 }

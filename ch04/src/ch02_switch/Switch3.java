@@ -17,6 +17,7 @@ public class Switch3 {
 		default : System.out.println("¸¾ ´ë·Î ÇØ");
 		}
 		
+		scanner.close();
 	}
 
 }
