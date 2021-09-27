@@ -1,28 +1,27 @@
 package ch04_while;
 
 import java.io.IOException;
-import java.util.Scanner;
 
-public class WhileKeyControlExample2 {
+public class WhileKeyControlExample3 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		boolean run = true;
 		int speed = 0;
 		int keyCode = 0;
-		Scanner scanner = new Scanner(System.in);
 		
-		//스캐너는 enter키 값을 제거 한 후 값을 리턴
 		while(run) {
-			if(keyCode !=-1) {//
+			if(keyCode !=13 && keyCode!=10) {//Enter키가 아니면
 				System.out.println("---------------");
 				System.out.println("1.증속 | 2. 감속 | 3. 중지");
 				System.out.println("---------------");
 				System.out.println("선택: ");
 				
 			}
-			//
-			keyCode = scanner.nextInt();//키보드로부터 int타입 값 입력
+			//'0'의 int값은 48 49-48=1, 50-48=2, 51-48=3
+			keyCode = System.in.read()-'0';//키보드로부터 입력
+			System.in.read();//\r = 13
+			System.in.read();//\n = 10
 			
 			if(keyCode==1) {//"1"
 				speed++;
