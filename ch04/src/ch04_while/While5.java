@@ -1,5 +1,5 @@
 package ch04_while;
-
+/*시작과 끝이 명확한 횟수를 알수 있을떄는 while문 보다는 for문 선호*/
 public class While5 {
 
 	public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class While5 {
 		
 		System.out.println("구구단");
 		while(i<=9) {
+			//
 			while(j<=9) {// for(int j=2;j<=9;j++){}
 				System.out.printf("%d * %d = %d \t",j,i,(i*j));//digit
 				j++;
